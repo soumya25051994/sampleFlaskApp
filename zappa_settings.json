@@ -1,0 +1,56 @@
+{
+    "dev": {
+        "app_function": "api.app",
+        "aws_region": "ap-southeast-1",
+        "profile_name": "default",
+        "project_name": "sampleflaskapp",
+        "runtime": "python3.8",
+        "s3_bucket": "dev-zappa-ht65373k5",
+        "lambda_description": "Flask Application deployed using Zappa",
+        "apigateway_description": "Serverless API endpoints using Zappa",
+        "cors": true,
+        "timeout_seconds": 300,
+        "environment_variables": {
+            "db_endpoint": "dev-rds-db-endpoint.cluster-cimi89shgrv.ap-southeast-1.rds.amazonaws.com",
+            "db_user_name": "admin",
+            "db_password": "12345678",
+            "db_name": "medium_db"
+        }
+    },
+    "stage": {
+        "app_function": "api.app",
+        "aws_region": "ap-southeast-1",
+        "profile_name": "default",
+        "project_name": "sampleflaskapp",
+        "runtime": "python3.8",
+        "s3_bucket": "stage-zappa-ht65373k5",
+        "lambda_description": "Flask Application deployed using Zappa",
+        "apigateway_description": "Serverless API endpoints using Zappa",
+        "cors": true,
+        "timeout_seconds": 300,
+        "environment_variables": {
+            "db_endpoint": "stage-rds-db-endpoint.cluster-cimi89shgrv.ap-southeast-1.rds.amazonaws.com",
+            "db_user_name": "admin",
+            "db_password": "12345678",
+            "db_name": "medium_db"
+        }
+    },
+    "uat": {
+        "app_function": "api.app",
+        "aws_region": "ap-southeast-1",
+        "profile_name": "default",
+        "project_name": "sampleflaskapp",
+        "runtime": "python3.8",
+        "s3_bucket": "uat-zappa-ht65373k5",
+        "lambda_description": "Flask Application deployed using Zappa",
+        "apigateway_description": "Serverless API endpoints using Zappa",
+        "cors": true,
+        "timeout_seconds": 300,
+        "environment_variables": {
+            "db_endpoint": "uat-rds-db-endpoint.cluster-cimi89shgrv.ap-southeast-1.rds.amazonaws.com",
+            "db_user_name": "admin",
+            "db_password": "12345678",
+            "db_name": "medium_db"
+        }
+    }
+}
